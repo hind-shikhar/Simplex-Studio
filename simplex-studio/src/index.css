@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-simplex-bg: #09090b;
+  --color-simplex-panel: #18181b;
+  --color-simplex-border: #27272a;
+  --color-simplex-accent: #3b82f6;
+  --color-simplex-accent-hover: #2563eb;
+  --color-simplex-text: #f4f4f5;
+  --color-simplex-text-dim: #a1a1aa;
+  
+  --color-simplex-success: #22c55e;
+  --color-simplex-error: #ef4444;
+  --color-simplex-warning: #eab308;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-simplex-bg);
+    color: var(--color-simplex-text);
+  }
+}
+
+/* Custom scrollbar for editor/panels */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-simplex-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
